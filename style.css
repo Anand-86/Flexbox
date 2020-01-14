@@ -1,0 +1,31 @@
+body {
+    margin-left: 0px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 3em;
+    border-bottom: 2px solid pink;
+    border-right: 2px solid pink;
+    width: 400px;
+    text-align: center; /*aligns with border and not with page*/
+    margin-top: 10px;
+    /* margin-left: 0px; */ /*wont work due to browser default limit. So use body tag to sort this out*/
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    transition: all 0.5s; /*all refers to all the properties*/
+}
+
+img:hover {
+    transform: scale(1.1);
+}
